@@ -3,15 +3,85 @@
 
 <head>
     <meta charset="UTF-8" />
+    <style>
+        .design {
+            color: white;
+            font-size: 20px;
+            display: block;
+        }
+
+        .inputdesign {
+            color: black;
+            font-size: 20px;
+            display: block;
+
+
+        }
+
+        .container {
+            width: auto;
+            height: auto;
+            text-align: center;
+            display: block;
+            position: relative;
+            left: 40%;
+            top: 0;
+            bottom: 0;
+            margin-top: 10%;
+        }
+
+        .btn {
+            background-color: rgb(247, 95, 7);
+            padding: 15px;
+            color: whitesmoke;
+            border-radius: 20px;
+            font-size: 30px;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: aqua;
+        }
+    </style>
 </head>
 
-<body>
+<body bgcolor="black">
     <div>
         <form method="POST" action="/form">
-            <label>Name</label><input name="name" type="text" value="" />
-            <label>Phone no</label><input name="address" type="text" value="" />
-
-            <input type="submit" value="submit" />
+            <div class="container">
+                <table>
+                    <tr>
+                        <td><label class="design">Name</label><input class="inputdesign" name="name" type="text"
+                                value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="design">Phone no</label><input class="inputdesign" name="address" type="text"
+                                value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><label class="design">Age</label><input class="inputdesign" name="age" type="text"
+                                value="" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label class="design">Highest Education</label><input class="inputdesign" name="heducation"
+                                type="text" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><label class="design">12th Marks</label><input class="inputdesign" name="marks" type="text"
+                                value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><label class="design">Category</label><input class="inputdesign" name="catogry" type="text"
+                                value="" /></td>
+                    </tr>
+                    <tr>
+                        <td><input class="btn" type="submit" value="Submit" /></td>
+                    </tr>
+                </table>
+            </div>
         </form>
     </div>
 </body>
